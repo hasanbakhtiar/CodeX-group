@@ -1,0 +1,90 @@
+/* .box{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    margin: 3px;
+} */
+/* span{
+    display: block;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+} */
+/* span{
+    color: red;
+} */
+
+img{
+    float: left;
+}
+.two{
+    clear: both;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* html{
+    font-size: 10px;
+} */
+
+/* 1em and 1rem deafult = 16px; */
+/* .parent{
+    font-size: 5px;
+}
+
+ .parent h1{
+    font-size: 10em;
+}
+
+
+
+h1{
+    font-size: 7rem;
+} */
+
+
+/* 
+.box {
+  width: 100px;
+  height: 50px; */
+  /* background-color: red; */
+  /* hex -> 0123456789abcdef */
+  /* background-color: #0aacdeff; */
+  /* min - 0 max 255 */
+  /* background-color: rgba(59, 58, 18, 10%); */
+  /* background-color: rgba(red, green, blue, alpha); */
+  /* background-color: hsl(hue, saturation, lightness); */
+  /* background-color: hwb(hue white black); */
+  /* background-color: hwb(0 0% 1% / 0.367); */
+  /* background-color: #000;
+} */
