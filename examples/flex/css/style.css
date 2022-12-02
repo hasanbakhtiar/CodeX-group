@@ -1,0 +1,165 @@
+@import url("reset.css");
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css');
+header {
+  width: 100%;
+  height: 100px;
+  background-color: bisque;
+  display: flex;
+  align-items: center;
+}
+header .logo {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+}
+
+header nav {
+  width: 70%;
+}
+header nav ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+header nav ul li a {
+  padding: 10px;
+  border: 2px dashed #000;
+  color: #000;
+  font-family: sans-serif;
+  font-weight: bolder;
+  font-size: 20px;
+  border-radius: 10px;
+}
+
+header nav ul li a:hover {
+  border: 2px solid orange;
+  background-color: #000;
+  color: bisque;
+}
+/* Header End */
+
+/* Hero Start */
+.hero {
+  width: 100%;
+  height: 90vh;
+  background-image: url("https://images.unsplash.com/photo-1612467968134-e58957756c7a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero .hero-bg {
+  width: 100%;
+  height: 90vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero .hero-bg h1 {
+  color: #fff;
+  font-size: 70px;
+  font-family: sans-serif;
+}
+
+/* Hero End */
+
+/* Card Start */
+.wrapper {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrapper .card-wrapper {
+  width: 80%;
+  height: auto;
+}
+.wrapper .card-wrapper .text-con {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper .card-wrapper .text-con h1 {
+  font-size: 70px;
+}
+.wrapper .card-wrapper .card-con {
+  width: 100%;
+  height: 82vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.wrapper .card-wrapper .card-con .card-item {
+  width: 30%;
+  height: 400px;
+  margin-bottom: 25px;
+  box-shadow: 13px 10px 12px -10px rgba(0, 0, 0, 0.74);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrapper .card-wrapper .card-con .card-item .text-con{
+    width: 80%;
+    height: 300px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+}
+.wrapper .card-wrapper .card-con .card-item .text-con i{
+    font-size: 40px;
+}
+.wrapper .card-wrapper .card-con .card-item .text-con h1{
+    font-size: 50px;
+}
+.wrapper .card-wrapper .card-con .card-item:nth-child(1) {
+  border-top: 4px solid red;
+}
+.wrapper .card-wrapper .card-con .card-item:nth-child(2) {
+    border-top: 4px solid orange;
+}
+.wrapper .card-wrapper .card-con .card-item:nth-child(3) {
+    border-top: 4px solid green;
+}
+.wrapper .card-wrapper .card-con .card-item:nth-child(4) {
+    border-top: 4px solid yellow;
+}
+.wrapper .card-wrapper .card-con .card-item:nth-child(5) {
+    border-top: 4px solid violet;
+}
+.wrapper .card-wrapper .card-con .card-item:nth-child(6) {
+    border-top: 4px solid blue;
+}
+
+
+
+    .wrapper .card-wrapper .card-con .card-item:nth-child(1) i {
+    color: red;
+  }
+  .wrapper .card-wrapper .card-con .card-item:nth-child(2) i {
+      color: orange;
+  }
+  .wrapper .card-wrapper .card-con .card-item:nth-child(3) i {
+      color: green;
+  }
+  .wrapper .card-wrapper .card-con .card-item:nth-child(4) i {
+      color: yellow;
+  }
+  .wrapper .card-wrapper .card-con .card-item:nth-child(5) i {
+      color: violet;
+  }
+  .wrapper .card-wrapper .card-con .card-item:nth-child(6) i {
+      color: blue;
+  }
+/* Card End */

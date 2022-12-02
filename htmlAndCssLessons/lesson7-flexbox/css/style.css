@@ -1,0 +1,33 @@
+.main-box {
+    width: 70%;
+    height: 70vh;
+    background-color: black;
+    display: flex;
+    /* flex-direction: column; */
+    /* flex-direction: row; */
+    /* flex-direction: column-reverse; */
+    /* flex-direction: row-reverse; */
+
+    /* justify-content: center; */
+    /* justify-content: space-between; */
+    /* justify-content: space-around; */
+    /* justify-content: space-evenly; */
+    /* justify-content: flex-start; */
+    /* justify-content: flex-end; */
+
+    /* align-items: center; */
+    /* align-items: flex-start; */
+    /* align-items: flex-end; */
+
+    /* flex-wrap:wrap ; */
+    /* flex-wrap:nowrap ; */
+    /* flex-wrap:wrap-reverse ; */
+}
+.main-box .box{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    margin: 3px;
+    font-size: 40px;
+    color: #fff;
+}
