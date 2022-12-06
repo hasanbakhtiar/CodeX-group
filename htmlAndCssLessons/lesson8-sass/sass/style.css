@@ -1,0 +1,20 @@
+header, .hero .box {
+  width: 100%;
+  height: 100px;
+  background-color: bisque;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header nav, .hero .box nav {
+  width: 70%;
+}
+header nav ul, .hero .box nav ul {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header nav ul li a, .hero .box nav ul li a {
+  color: #631298;
+}/*# sourceMappingURL=style.css.map */

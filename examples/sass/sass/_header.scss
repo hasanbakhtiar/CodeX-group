@@ -1,0 +1,28 @@
+header{
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,117,255,1) 100%);
+    @include center();
+    align-items: center;
+    .logo{
+        width: 30%;
+        @include center();
+        h1{
+            color: #fff;
+        }
+    }
+    nav{
+        width: 70%;
+        @include center();
+        ul{
+            width: 100%;
+            @include evenly();
+            li{
+                list-style: none;
+                a{
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
