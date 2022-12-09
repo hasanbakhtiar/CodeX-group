@@ -1,0 +1,117 @@
+body, * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.bg-wrapper {
+  width: 100%;
+  height: auto;
+  background-color: #353353;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.bg-wrapper .wrapper {
+  width: 70%;
+  height: auto;
+}
+
+header {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .logo {
+  width: 30%;
+}
+header nav {
+  width: 70%;
+}
+header nav ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+header nav ul li a {
+  color: #fff;
+}
+
+main .hero {
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .hero .hero-screen {
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+main .hero .hero-screen * {
+  color: #fff;
+}
+main .hero .hero-screen button {
+  background-color: #ff4c60;
+  border: none;
+  width: 100px;
+  height: 50px;
+  border-radius: 30px;
+}
+main .services h1 {
+  color: #fff;
+  font-size: 70px;
+}
+main .services .service-con {
+  margin-top: 20px;
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main .services .service-con .service-box:nth-child(1) {
+  background-color: rgb(108, 108, 229);
+}
+main .services .service-con .service-box:nth-child(2) {
+  background-color: rgb(249, 215, 76);
+}
+main .services .service-con .service-box:nth-child(3) {
+  background-color: rgb(249, 123, 139);
+}
+main .services .service-con .service-box {
+  border-radius: 20px;
+  width: 30%;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .services .service-con .service-box .box-con {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  height: 200px;
+}
+main .services .service-con .service-box .box-con * {
+  color: #fff;
+}
+main .services .service-con .service-box .box-con p {
+  text-align: center;
+}/*# sourceMappingURL=style.css.map */

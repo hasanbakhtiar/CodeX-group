@@ -1,0 +1,23 @@
+header{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .logo{
+        width: 30%;
+    }
+    nav{
+        width: 70%;
+        ul{
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            li{
+                a{
+                    color: #fff;
+                }
+            }
+        }
+    }
+}

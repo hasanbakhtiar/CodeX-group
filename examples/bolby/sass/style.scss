@@ -1,0 +1,16 @@
+@import 'reset';
+.bg-wrapper{
+    width: 100%;
+    height: auto;
+    background-color:#353353; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    .wrapper{
+        width: 70%;
+        height: auto;
+    }
+}
+@import 'header';
+@import 'main';
