@@ -1,0 +1,134 @@
+// .con-box{
+//     width: 50%;
+//     height: 120px;
+//     border: 1px dashed #000;
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-between;
+//     .right-boxs{
+//         width: 50%;
+//         display: flex;
+//         justify-content: space-around;
+//         .box{
+//             width: 100px;
+//             height:100px;
+//             background-color: red;
+//         }
+//     }
+//     .left-boxs{
+//         display: flex;
+//         justify-content: center;
+//         position: relative;
+//         width: 24%;
+//         .box{
+//             width: 100px;
+//             height:100px;
+//             background-color: red;
+//         }
+//         .box:nth-child(2){
+//             background-color: green;
+//             position: absolute;
+//             top: 14px;
+//             left: 207px;
+//         }
+//     }
+    
+// }
+
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+// .box{
+//     width: 100px;
+//     height: 100px;
+//     background-color: red;
+//     // transform: translateX(100px);
+//     // transform: translateY(100px);
+//     // transform: translate(100px,200px);
+
+//     // transform: scaleX(3);
+//     // transform: scaleY(3);
+//     // transform: scale(2,3);
+
+//     // transform: skewY(120deg);
+//     // transform: skewx(120deg);
+//     // transform: skew(100deg,200deg);
+
+//     // transform: rotate(120deg);
+//     // matrix(scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY())
+//     // transform: matrix(1, -0.3, 0, 1, 100, 100);
+
+// }
+
+// .box{
+//     width: 100px;
+//     height: 100px;
+//     background-color: red;
+    // transition-property: transform, background-color;
+    // transition-delay: 2s;
+    // transition-duration: 2s;
+
+    // transition: transform 2s, background-color 10s;
+    // transition: 1s;
+//     &:hover{
+//         transform: scaleX(2);
+//         background-color: green;
+//     }
+// }
+
+// h1::before{
+//     content: "How a u?";
+// }
+
+
+// .info-box{
+//     width: 100px;
+//     height: 300px;
+//     background-color: red;
+//     position: relative;
+//     &::after{
+//         content: "";
+//         display: block;
+//         width: 100px;
+//         height: 0px;
+//         background-color: black;
+//         position: absolute;
+//         transition: 1s;
+//     }
+//     &:hover::after{
+//         height: 300px;
+//     }
+// }
+
+.card{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background-image:url('https://images.unsplash.com/photo-1670871239330-7b2e9d857c43?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80') ;
+    background-size: cover;
+    background-position: center;
+    .bg-card{
+        position: absolute;
+        top: 0;
+        width: 300px;
+        height: 300px;
+        background-color: rgba($color: #000000, $alpha: .5);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        opacity: 0;
+        transition: 1s;
+        h1,p{
+            color: #fff;
+        }
+    }
+    &:hover .bg-card{
+        opacity: 1;
+    }
+}
