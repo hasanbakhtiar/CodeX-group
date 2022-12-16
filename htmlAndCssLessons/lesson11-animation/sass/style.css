@@ -1,0 +1,19 @@
+i {
+  font-size: 30px;
+  -webkit-animation: rotateIcon 2s infinite;
+          animation: rotateIcon 2s infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+@-webkit-keyframes rotateIcon {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotateIcon {
+  100% {
+    transform: rotate(360deg);
+  }
+}/*# sourceMappingURL=style.css.map */

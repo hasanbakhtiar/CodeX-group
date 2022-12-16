@@ -1,0 +1,41 @@
+// .box{
+//     position: relative;
+//     width: 100px;
+//     height: 100px;
+//     background-color: red;
+//     clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+
+//     // animation-delay: 2s;
+//     // animation-name: action;
+//     // animation-duration: 5s;
+//     // animation-iteration-count: infinite;
+//     animation: action 5s infinite;
+// }
+// @keyframes action{
+//     from{left: 0;}
+//     to{left: 100px;}
+//     0%{left: 0; top: 0;}
+//     25%{left: 500px; top: 0; background-color: yellow; border-radius: 10px; width:110px ;}
+//     50%{left: 500px; top: 500px; background-color: green;border-radius: 30px; width: 120px;}
+//     75%{left: 1000px; top: 500px; background-color: pink; border-radius: 50px; width: 130px;}
+//     100%{left: 0px; top: 0px;background-color: blue;border: 50%; width: 140px;}
+//     // 0%{left: 0; top: 0;}
+//     // 5%{left: 100px; top: 0px;}
+//     // 10%{left: 100px; top: 100px;}
+//     // 15%{left: 0px; top: 100px;}
+//     // 20%{left: 0px; top: 200px;}
+//     // 25%{left: 100px; top: 200px;}
+//     // 30%{left: 100px; top: 300px;}
+//     // 35%{left: 0px; top: 300px;}
+    
+// }
+
+i{
+    font-size: 30px;
+    animation: rotateIcon 2s infinite ;
+    animation-timing-function: linear;
+}
+@keyframes rotateIcon {
+    
+    100%{transform: rotate(360deg);}
+}
