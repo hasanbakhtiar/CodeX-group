@@ -1,0 +1,15 @@
+.card-con{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+    .card{
+        margin-top: 20px;
+        width: 30%;
+        height: 20vh;
+        background-color: bisque;
+    }
+}
+
