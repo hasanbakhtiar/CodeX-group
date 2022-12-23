@@ -1,0 +1,23 @@
+.wrapper{
+    width: 100%;
+    height: auto;
+    background-color: #54CBCA;
+    .wrapper-decaration{
+        width: 100%;
+        height: auto;
+        background-image:url('http://127.0.0.1:5500/assets/img/background-decoration.svg');
+    }
+}
+
+.custom-btn{
+    height: 50px; font-size: 13px;
+}
+.animate-btn{
+    transition: 300ms;
+    transition-timing-function: cubic-bezier(.5,2.5,.7,.7);
+    &:hover{
+        box-shadow: 3px 3px 0px 0px rgba(0,0,0,0.75);
+        background-color: #fff;
+        color: #000;
+    }
+}
