@@ -57,15 +57,15 @@ import { productList } from "../data/products.js";
 // console.log(productList.filter(checkCategory));
 
 
-// let productFilter = productList.filter((data)=>{
-//     return data.category === "electronics"
-// }).map(item=>{
-//     return item.title
-// })
+let productFilter = productList.filter((data)=>{
+    return data.category === "electronics"
+}).map(item=>{
+    return item.title
+})
 
-// productFilter.forEach(item=>{
-//     console.log(item);
-// })
+productFilter.forEach(item=>{
+    console.log(item);
+})
 
 
 
