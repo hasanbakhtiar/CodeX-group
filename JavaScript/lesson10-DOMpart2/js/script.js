@@ -28,3 +28,11 @@
 document.querySelector('.bar').onclick=()=>{
     document.querySelector('ul').classList.toggle('show');
 }
+
+document.querySelector('.mode').onclick=()=>{
+    if(document.querySelector('#wrapper').className === 'light'){
+        document.querySelector('#wrapper').className = 'dark';
+    }else{
+        document.querySelector('#wrapper').className = 'light';
+    }
+}
