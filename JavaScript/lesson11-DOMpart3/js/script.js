@@ -54,18 +54,34 @@ if (localStorage.getItem('lang') === 'az') {
 // MODE HISSESI
 const btnMode = document.querySelectorAll('button')[1];
 const header  = document.querySelector('header');
+
+
+if(localStorage.getItem('mode') === null){
+    localStorage.setItem('mode','light');
+}else{
 const mode =()=>{
     if (btnMode.innerHTML === 'dark') {
         header.className = "dark";
         btnMode.innerHTML = "light"
+        localStorage.setItem('mode','dark');
     }else{
         header.className = "light";
         btnMode.innerHTML = "dark"
-
+        localStorage.setItem('mode','light');
     }
 }
-
 btnMode.onclick = mode;
+}
+
+    if (localStorage.getItem('mode') === 'light') {
+        header.className = "light";
+        btnMode.innerHTML = "dark"
+    }else{
+          header.className = "dark";
+        btnMode.innerHTML = "light"
+    }
+
+
 // MODE HISSESI
 
 
