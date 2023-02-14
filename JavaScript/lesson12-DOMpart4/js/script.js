@@ -63,6 +63,24 @@
 
 
 const defaultMail = "info@example.com";
+const input = document.querySelector('input');
+const alterText  = document.querySelector('p');
+const form  = document.querySelector('form');
+const emailCheck=(e)=>{
+    e.preventDefault();
+ if (!input.value) {
+    alterText.innerHTML = "please, fill input";
+    alterText.style.color = 'orange';
+ }else{
+    if (defaultMail === input.value) {
+        alterText.innerHTML = "send password your email";
+        alterText.style.color = 'green';
+    }else{
+        alterText.innerHTML  = 'wrong email address!'
+        alterText.style.color = 'red';
 
-
+    }
+ }
+}
+form.onsubmit = emailCheck;
 
