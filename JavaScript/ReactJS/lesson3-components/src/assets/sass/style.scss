@@ -7,4 +7,17 @@ h1{
 }
 .my-flex{
     display: flex;
+    justify-content: space-between;
+}
+
+.card{
+    width: 30%;
+    height: 20vh;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h1{
+        color: #fff;
+    }
 }
