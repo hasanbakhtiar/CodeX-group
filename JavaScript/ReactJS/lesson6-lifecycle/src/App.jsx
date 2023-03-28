@@ -1,24 +1,40 @@
 import { Component } from 'react'
 
-
-
-
 class App extends Component{
   constructor(){
     super();
     this.state = {
-      value:""
+      value:"",
+      result:"",
+      display:true
+      
     }
+  }
+  handleClick =()=>{
+    this.setState({
+      result:this.state.value
+    })
+  }
+  componentDidUpdate(){
+   document.querySelector('button').className = 'btn btn-success';
+  }
+  componentWillUnmount(){
+    document.querySelector('button').className = 'btn btn-dark';
   }
   render(){
     return(
       <div className='mt-5 container'>
-      <input type="text"  onChange={e=>{
+     <input type="text"  onChange={e=>{
         this.setState({
           value:e.target.value
         })
-      }}/> <button>add</button>
-      <p>{this.state.value}</p>
+      }}/> <button className="btn btn-secondary" onClick={this.handleClick}>add</button>
+       <p>{this.state.display ? this.state.result : ""}</p> 
+      <button className='btn btn-danger'  onClick={()=>{
+        this.setState({
+          display:false
+        })
+      }}>all del</button>
       </div>
     )
   }
