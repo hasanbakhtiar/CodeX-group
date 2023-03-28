@@ -12,18 +12,29 @@ const userdata = {
         super();
         this.state={
             email:"",
+            alerttext:"",
+            alertstyle:"",
             pass:""
         }
     }
     formSubmit=(e)=>{
         e.preventDefault();
         if (!this.state.email || !this.state.pass) {
-            alert('fill input')
+            this.setState({
+                alerttext:"please, fill input!  ",
+                alertstyle:'warning'
+            })
         }else{
             if (this.state.pass === userdata.pass && this.state.email === userdata.email) {
-                alert('login success')
+                this.setState({
+                    alerttext:"login is successfully!",
+                    alertstyle:'success'
+                })
             }else{
-                alert('wrong')
+                this.setState({
+                    alerttext:"email or password is wrong!",
+                    alertstyle:'danger'
+                })
             }
         }
     }
@@ -32,6 +43,7 @@ const userdata = {
       <>
           <div className="d-flex align-items-center justify-content-center flex-column">
             <h1>Login</h1>
+            <div className={`alert alert-${this.state.alertstyle}`}>{this.state.alerttext}</div>
        <div className="col-6">
        <form onSubmit={this.formSubmit}>
             <div className="mb-3">
