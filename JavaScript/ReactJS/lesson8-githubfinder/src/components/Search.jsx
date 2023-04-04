@@ -4,12 +4,17 @@ class Search extends Component {
   constructor(){
     super();
     this.state={
-      keyword:""
-    }
+      keyword:"",
+      inputstatus:"no users"
+    } 
   }
+
+
   formSubmit=(e)=>{
         e.preventDefault();
-        this.props.inputValue(this.state.keyword)
+        this.props.inputValue(this.state.keyword);
+        this.props.dataStatus(this.state.inputstatus);
+       
   }
   render() {
     return (  
@@ -18,7 +23,7 @@ class Search extends Component {
           <div className="input-group mb-3">
             <input onChange={e=>{
               this.setState({
-                keyword:e.target.value
+                keyword:e.target.value,
               })
             }} type="text" className="form-control" placeholder="Enter username"  />
             <button className="btn btn-success" type="submit">Search</button>

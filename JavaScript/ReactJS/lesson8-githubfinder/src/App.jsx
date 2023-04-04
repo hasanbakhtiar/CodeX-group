@@ -1,45 +1,52 @@
-import React, { Component, Fragment } from 'react'
-import Header from './components/Header'
-import '../node_modules/bootstrap/scss/bootstrap.scss';
-import Search from './components/Search';
-import Users from './components/Users';
-import axios from 'axios';
+import React, { Component, Fragment } from "react";
+import Header from "./components/Header";
+import "../node_modules/bootstrap/scss/bootstrap.scss";
+import Search from "./components/Search";
+import Users from "./components/Users";
+import axios from "axios";
 class App extends Component {
-
-  constructor(){
+  constructor() {
     super();
-    this.state={
-      users:[],
-      data:false
-    }
+    this.state = {
+      users: [],
+      status:"",
+      
+    };
   }
 
 
-  componentDidMount(){
+
  
-  }
-  
 
-  searchValue=(keyword)=>{
-    axios.get(`https://api.github.com/search/users?q=${keyword}`)
-    .then((res)=>{
-      this.setState({users:res.data.items,
-        data:true
+
+  searchValue = (keyword) => {
+    axios
+      .get(`https://api.github.com/search/users?q=${keyword}`)
+      .then((res) => {
+        this.setState({ users: res.data.items, data: true });
+        console.log(res);
       });
-      console.log(res);
+  };
 
-  })
+  formStatus=(a)=>{
+      this.setState({
+          status:a
+      })
   }
-  
+
   render() {
     return (
       <Fragment>
-          <Header />
-          <Search inputValue={this.searchValue}/>
-          {this.state.users.length === 0 ? <h1 className='text-center'>No Users</h1>: <Users comingusers = {this.state.users}/>}
+        <Header />
+        <Search dataStatus={this.formStatus} inputValue={this.searchValue} formStatus={this.dataStatus} />
+        {this.state.users.length === 0 ? (
+          <h1  className="text-center">{this.state.status}</h1>
+        ) : (
+          <Users comingusers={this.state.users} />
+        )}
       </Fragment>
-    )
+    );
   }
 }
 
-export default App
+export default App;
