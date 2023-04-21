@@ -1,0 +1,23 @@
+.ph1 {
+    transition: 0.5s;
+  display: block;
+}
+.ph2 {
+
+  display: block;
+  transform: translateY(-130px);
+  transition: 0.5s;
+}
+
+.main-ph {
+  &:hover {
+    .ph1 {
+      opacity: 1;
+
+    }
+    .ph2 {
+      opacity: 0;
+
+    }
+  }
+}

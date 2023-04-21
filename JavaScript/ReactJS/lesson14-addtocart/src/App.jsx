@@ -7,6 +7,7 @@ import { Container } from "react-bootstrap";
 import { ProductProvider } from "./context/ProductContext";
 import { CartProvider } from "react-use-cart";
 import Basket from "./pages/Basket";
+import ProductDetails from "./pages/ProductDetails";
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
             <Routes>
               <Route path="/" element={<Home />}></Route>
               <Route path="/products" element={<Products />}></Route>
+              <Route path="/products/:id" element={<ProductDetails />}></Route>
               <Route path="/basket" element={<Basket />}></Route>
             </Routes>
           </Container>

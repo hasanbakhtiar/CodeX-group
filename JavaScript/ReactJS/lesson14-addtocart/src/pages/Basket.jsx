@@ -1,12 +1,17 @@
 import React from 'react'
 import { Button, Container, Table } from 'react-bootstrap';
+import { LinkContainer } from 'react-router-bootstrap';
 import { useCart } from 'react-use-cart'
 
 const Basket = () => {
     const {isEmpty,items,updateItemQuantity,removeItem, cartTotal} = useCart();
   return (
  <>
-   {isEmpty ? <h1 className="text-center my-5">Basket is empty!</h1>:<>
+   {isEmpty ? <LinkContainer to="/products">
+    <div className="d-flex justify-content-center">
+      <img src="https://cdn.dribbble.com/users/461802/screenshots/4421003/emptycart.gif" alt="" />
+    </div>
+   </LinkContainer>:<>
  <Container>
  <h1 className='my-5 text-center '>Your Basket</h1>
    <Table striped bordered hover>
@@ -25,7 +30,9 @@ const Basket = () => {
   <tr>
   <td>1</td>
   <td><img width={50} src={value.image} alt="" /></td>
-  <td>{value.title.substring(0,30)}...</td>
+  <LinkContainer to={`/products/${value.id}`}>
+  <td className='text-primary'>{value.title.substring(0,30)}...</td>
+  </LinkContainer>
   <td>{value.price.toFixed()*value.quantity}$</td>
   <td>
     <Button variant='warning' onClick={()=>{updateItemQuantity(value.id, value.quantity -1)}}>-</Button>
