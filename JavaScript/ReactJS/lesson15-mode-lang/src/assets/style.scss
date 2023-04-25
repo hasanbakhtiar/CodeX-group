@@ -1,0 +1,40 @@
+.ph1 {
+    transition: 0.5s;
+  display: block;
+}
+.ph2 {
+
+  display: block;
+  transform: translateY(-130px);
+  transition: 0.5s;
+}
+
+.main-ph {
+  &:hover {
+    .ph1 {
+      opacity: 1;
+
+    }
+    .ph2 {
+      opacity: 0;
+
+    }
+  }
+}
+.light{
+  background-color: #fff;
+  color:#000;
+}
+
+
+.dark{
+  background-color: #333;
+  color:#fff !important;
+  h1{
+    color: #fff;
+  }
+  .card,table{
+    background-color: #fff;
+    color:#000;
+  }
+}
