@@ -1,0 +1,20 @@
+[
+    {
+        "id":1,
+        "title":"Pen",
+        "img":"https://www.montblanc.com/variants/images/34480784411808558/A/w2500.jpg",
+        "price":100
+    },
+    {
+        "id":2,
+        "title":"Copybook",
+        "img":"https://www.antaris.az/wp-content/uploads/2020/08/A548-s%C9%99h.YES-COPYBOOK-damali-qeyd-d%C9%99ft%C9%99ri-d.jpg",
+        "price":3
+    },
+    {
+        "id":3,
+        "title":"Ruler",
+        "img":"https://www.partsight.org.uk/media/catalog/product/cache/89c16c65bc351d3d228bbdf5eeba3cf3/l/a/large-print-ruler-1.jpg",
+        "price":1
+    }
+]
