@@ -4,19 +4,22 @@ import { createStore } from 'redux';
 
 
 
-const initalState = 0;
+const initalState = {count:0};
 
 const store = createStore((state = initalState, action) => {
   switch (action.type) {
 
     case 'increment':
-      return state + 1
-
+      return {count:typeof action.value === "number" ? state.count + action.value : 1 
+}
     case 'decrement':
-      return state - 1
+      return {count:state.count - 1}
+      case 'reset':
+      return {count:0}
+      
 
     default:
-      return 0
+      return {count:0}
   }
 });
 
@@ -26,13 +29,18 @@ store.subscribe(() => {
 })
 
 store.dispatch({
-  type:"increment"
+  type:"increment",
+  value:10
 })
 store.dispatch({
   type:"decrement"
 })
 store.dispatch({
-  type:"decrement"
+  type:"reset"
+})
+store.dispatch({
+  type:"increment",
+  value:100
 })
 
 
