@@ -1,0 +1,39 @@
+.cycle{
+    width: 300px;
+    height: 300px;
+    background-color: rgb(26, 165, 28);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    .img-cycle{
+        transition: .5s;
+        background-image: url('https://freepngimg.com/thumb/categories/627.png');
+        width: 200px;
+        height: 200px;
+    }
+    &:hover{
+        .img-cycle{
+            transform: scale(1.5);
+        }
+    }
+}
+html{
+    overflow-x: hidden;
+}
+.menu{
+    transition: .5s;
+    position: absolute;
+    right: 0;
+    width: 300px;
+    height: 80vh;
+    background-color: bisque;
+}
+#hide{
+    transform: translateX(400px);
+}
+
+#show{
+    transform: translateX(0px);
+}
