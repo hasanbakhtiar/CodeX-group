@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, {  useRef } from "react";
 import { Button, Form, InputGroup } from "react-bootstrap";
 type NewTodoProp={
   onAddTodo:(todo:string)=>void
@@ -6,6 +6,8 @@ type NewTodoProp={
 
 
 const NewTodo: React.FC<NewTodoProp> = ({onAddTodo}) => {
+ 
+  
   const textInputRef = useRef<HTMLInputElement>(null);
 
   const todoSubmitedHandler =(e:React.FormEvent):void=>{

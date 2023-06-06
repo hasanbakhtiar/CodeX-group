@@ -27,6 +27,11 @@ const App: React.FC = () => {
                 ...prevTodo,{id:crypto.randomUUID(),text:todoText}
               ])      
         }
+        const todoDeleteHandler = (todoId:string)=>{
+                setTodos((prevTodo)=>{
+                    return prevTodo.filter((i:any)=>i.id !== todoId);
+                })
+        }
     
   return (
     <div>
@@ -34,7 +39,7 @@ const App: React.FC = () => {
       <div className="w-100 d-flex align-items-center flex-column">
         <Col md={5}>
           <NewTodo onAddTodo={todoAddHandler}/>
-          <TodoList items={todos}/>
+          <TodoList items={todos} ondeleteTodo={todoDeleteHandler}/>
         </Col>
       </div>
     </div>
