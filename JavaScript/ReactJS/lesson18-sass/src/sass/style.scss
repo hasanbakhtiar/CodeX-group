@@ -1,0 +1,63 @@
+// $base-color: rgb(102, 0, 34);
+
+// @for $i from 1 through 15 {
+//   li:nth-child(3n + #{$i}) {
+//     background-color: lighten($base-color, $i * 5%);
+//   }
+// }
+
+
+// $mycolor :blue;
+
+// @if($mycolor == red){
+//     li{
+//         font-size: 30px;
+//     }
+// }@else if($mycolor == blue){
+//     li{
+//       color: blue;
+//     }
+// }
+// @else{
+//     li{
+//         font-size: 100px;
+//     }
+// }
+
+
+// @use "sass:math";
+
+// /// Divides `$value` by `$ratio` until it's below `$base`.
+// @function scale-below($value, $base, $ratio: 1.618) {
+//   @while $value > $base {
+//     $value: math.div($value, $ratio);
+//   }
+//   @return $value;
+// }
+
+// $normal-font-size: 16px;
+// li {
+//   font-size: scale-below(20px, 16px);
+// }
+
+@use "sass:math";
+@import  'test/color';
+
+
+
+@function changesize($comingsize){
+        $totalsize : $comingsize * 5;
+        @return $totalsize;
+}
+
+h1{
+    @include mycolor();
+    background-color: red;
+    font-family: sans-serif;
+}
+
+
+li{
+    @extend h1;
+    font-size: changesize(10px);
+}
