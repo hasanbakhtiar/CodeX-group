@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import configureStore from "./redux/store/configureStore";
-import { addblog, getBlogsFromDatabase, removeBlog } from "./redux/action/blogAction";
+import {  getBlogsFromDatabase } from "./redux/action/blogAction";
 import App from "./App";
 import { Provider } from "react-redux";
 import './sass/style.scss';

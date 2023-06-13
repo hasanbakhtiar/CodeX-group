@@ -3,7 +3,7 @@ import { Button } from 'react-bootstrap';
 import Table from 'react-bootstrap/Table';
 import { useDispatch, useSelector } from 'react-redux';
 import { LinkContainer } from 'react-router-bootstrap';
-import { removeBlog } from '../../redux/action/blogAction';
+import { removeBlog, removeBlogFromDatabase } from '../../redux/action/blogAction';
 
 const Dashboard = () => {
     const blogs = useSelector(a => a);
@@ -33,7 +33,7 @@ const Dashboard = () => {
                             <td>{item.title.substring(0, 30)}...</td>
                             <td>{item.desc.substring(0, 30)} ...</td>
                             <td><LinkContainer to={`/admin/dashboard/edit/${item.id}`}><Button variant='warning'>Edit</Button></LinkContainer></td>
-                            <td><Button variant='danger' onClick={() => { dispatch(removeBlog({ comingid: item.id })) }}>Delete</Button></td>
+                            <td><Button variant='danger' onClick={() => { dispatch(removeBlogFromDatabase(item.id)) }}>Delete</Button></td>
                         </tr>
                     ))}
 

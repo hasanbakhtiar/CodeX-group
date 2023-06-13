@@ -32,8 +32,8 @@ const Header=()=> {
             </LinkContainer>
            
           </Nav>
-          <LinkContainer to="/admin">
-          <Button variant='warning' className='me-3'>Login</Button>
+          <LinkContainer to="/admin/dashboard">
+          <Button variant='warning' className='me-3'>Admin</Button>
           </LinkContainer>
           <Button onClick={()=>{mymenu === "hide"?setMyMenu("show"):setMyMenu("hide")}}>menu</Button>
         </Navbar.Collapse>
